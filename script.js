@@ -11,8 +11,19 @@ const tabs = document.querySelectorAll('.operations__tab');
 const tabsContainer = document.querySelector('.operations__tab-container');
 const tabsContent = document.querySelectorAll('.operations__content');
 
+
+const toggleBtn = document.querySelector('.nav__toggle-btn');
+const navLinks = document.querySelector('.nav__links');
+
+toggleBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+
 ///////////////////////////////////////
 // Modal window
+
+
 
 const openModal = function (e) {
   e.preventDefault();
